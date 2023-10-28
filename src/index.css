@@ -212,8 +212,8 @@ form .input-field .linked
   text-align: end;
   margin-top: 15px;
 }
-
-@media  (max-width:257px) {
+/* ---------------------------------Media Queries Begin------------------------ */
+@media  (max-width:260px) {
 :root {
   width: 300%;
   object-fit: cover;
@@ -223,14 +223,14 @@ form .input-field .linked
 .main-img{
    background-image: none;
  }
- .nain-img 
+ .main-img 
  {
   background-image: none;
  }
-
+ 
 }
 
-@media  (max-width:360px) {
+@media  (max-width:361px) {
   :root {
     width: 300%;
    height: 100vh;
@@ -286,13 +286,13 @@ form .input-field .linked
     scale: 0.9;
     
     left: 7px;
-    width: 310px;
+    width: 300px;
     height: 500px;
     
   }
   .main-heading {
    font-size: 60px;
-margin-top: -80px;
+  margin-top: -80px;
    line-height: 50px;
    
    margin-left: 10px;
@@ -311,10 +311,93 @@ margin-top: -80px;
   scale: 0.85;
    margin: 19px 0px 3px 0px;
  }
+}
 
+@media (max-width:415px) {
+  
 
-
+  .main-img{
+    background-image: none;
   }
+  .main1-img{
+   background-image: none;
+ }
+ .container
+ {
+   top: 55px;
+   left: 14px;
+   height: 600px;
+   width: 365px;
+  }
+  .signup-container
+  {
+    scale: 0.9; 
+    left: 7px;
+    width: 330px;
+    height: 550px;
+    
+  }
+  .main-heading1 {
+   font-size: 60px;
+   font-weight: 500;
+   line-height: 50px;
+   margin-top: 10px;
+   margin-left: 10px;
+  
+ }
+ .heading1
+ {
+   margin-left: 10px;
+ }
+ form .input-field1 input {
+ scale: 0.85;
+ ;
+ }
+ 
+ form .input-field1 button 
+ {
+  scale: 0.85;
+   margin: -20px 0px 3px 0px;
+ }
+
+ /* -----------------------Login container media query */
+ .login-container
+ {
+   scale: 0.9;
+   
+   left: 7px;
+   width: 350px;
+   height: 500px;
+   
+ }
+ .main-heading {
+  font-size: 60px;
+margin-top: -80px;
+  line-height: 50px;
+  
+  margin-left: 10px;
+ 
+}
+.heading
+{
+  margin-left: 10px;
+}
+form .input-field input {
+scale: 0.85;
+}
+
+form .input-field button 
+{
+ scale: 0.85;
+  margin: 19px 0px 3px 0px;
+}
+form .input-field .link{
+margin-right: 20px;
+}
+
+}
+
+  
 
   @media  (max-width:582px) {
     :root {
@@ -328,6 +411,7 @@ margin-top: -80px;
      }
     
     }
+
     @media  (max-width:682px) {
       :root {
         width: 300%;
@@ -335,7 +419,161 @@ margin-top: -80px;
       }
       
       .main-img{
-         background-image: none;
-       }
+        scale: 0.5;
+        top: -10px;
+      }
+      .main1-img{
+      scale: 0.4;
+      left: -10px;
+     }
+     .container
+     {
+     margin: 110px;
+     scale: 1.4;
+      }
+      .signup-container
+      {
+        scale: 0.9;
+        
+        left: 7px;
+        width: 100%;
+        height: 500px;
+        
+      }
+      .main-heading1 {
+       font-size: 60px;
+       font-weight: 500;
+       line-height: 50px;
+       margin-top: 10px;
+       margin-left: 10px;
       
+     }
+     .heading1
+     {
+       margin-left: 10px;
+     }
+     form .input-field1 input {
+     scale: 0.85;
+     ;
+     }
+     
+     form .input-field1 button 
+     {
+      scale: 0.85;
+       margin: -20px 0px 3px 0px;
+     }
+     /* -----------------------Login container media query */
+     .login-container
+     {
+       scale: 0.9;
+       
+       left: 7px;
+       width: 100%;
+       height: 500px;
+       
+     }
+     .main-heading {
+      font-size: 60px;
+     margin-top: -80px;
+      line-height: 50px;
+      
+      margin-left: 10px;
+     
+    }
+    .heading
+    {
+      margin-left: 10px;
+    }
+    form .input-field input {
+    scale: 0.85;
+    }
+    
+    form .input-field button 
+    {
+     scale: 0.85;
+      margin: 19px 0px 3px 0px;
+    }
+      
+      }
+
+      @media (max-width:912px) {
+        
+        .main-img{
+          scale: 0.5;
+          top: -10px;
+        }
+        .main1-img{
+        scale: 0.7;
+        left: -10px;
+       }
+       .container
+       {
+         top: 55px;
+         left: 14px;
+         height: 600px;
+         width: 415px;
+        }
+        .signup-container
+        {
+          scale: 0.9;
+          
+          left: 7px;
+          width: 100%;
+          height: 500px;
+          
+        }
+        .main-heading1 {
+         font-size: 60px;
+         font-weight: 500;
+         line-height: 50px;
+         margin-top: 10px;
+         margin-left: 10px;
+        
+       }
+       .heading1
+       {
+         margin-left: 10px;
+       }
+       form .input-field1 input {
+       scale: 0.85;
+       ;
+       }
+       
+       form .input-field1 button 
+       {
+        scale: 0.85;
+         margin: -20px 0px 3px 0px;
+       }
+       /* -----------------------Login container media query */
+       .login-container
+       {
+         scale: 0.9;
+         
+         left: 7px;
+         width: 100%;
+         height: 500px;
+         
+       }
+       .main-heading {
+        font-size: 60px;
+       margin-top: -80px;
+        line-height: 50px;
+        
+        margin-left: 10px;
+       
+      }
+      .heading
+      {
+        margin-left: 10px;
+      }
+      form .input-field input {
+      scale: 0.85;
+      }
+      
+      form .input-field button 
+      {
+       scale: 0.85;
+        margin: 19px 0px 3px 0px;
+      }
+
       }
