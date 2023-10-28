@@ -55,7 +55,79 @@
   border: solid 1px #000;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+ 
   align-items: center;
-  border-radius: 40px;
+   border-radius: 40px;
   cursor: pointer;
+}
+.main-heading {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+  margin-top: -150px;
+  font-family: Times New Roman;
+  color: #080C66;
+user-select: none;
+}
+.heading 
+{
+  font-family: Alike Angular;
+font-size: 36px;
+font-weight: 400;
+line-height: 45px;
+user-select: none;
+}
+form .input-field {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+}
+
+form .input-field input {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: solid 2px #000;
+  font-size: 16px;
+  outline: none;
+}
+form .input-field button 
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 400;
+  background: #3874EA ;
+  color:#fff;
+  font-style: none;
+  font-family: Alike Angular;
+  margin: 25px 0px 20px 0px;
+}
+form .input-field button:active
+{
+  background-color: #080C66;
+}
+form .input-field p{
+ text-align: center;
+ font-size: 115%;
+}form .notice 
+{
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: red;
+}
+form .input-field .link
+{
+  text-decoration: none;
+}
+form .input-field .linked 
+{
+  text-align: end;
+  margin-top: 15px;
 }
