@@ -42,19 +42,19 @@ function changeHandler(e)
         <h2 className='main-heading'> Welcome!</h2>
         <h3 className='heading'>Please,enter your details</h3>
         <div className='input-field linked'>
-          <input type='email' name='email' value={formData.email} onChange={changeHandler} pattern='./@gmail.com' required placeholder='Enter Your Email'></input>
-          <div className='error-message'><p>{errors.email}</p></div>
+          <input type='email' name='email' value={formData.email} onChange={changeHandler}  required placeholder='Enter Your Email'></input>
+          <div className='error-message'>{errors.email}</div>
         </div>
      
         <div className='input-field'>
           <input type='password' name='password' value={formData.password} onChange={changeHandler} required placeholder='Enter Your Password'></input>
-          <div className='error-message'><p>{errors.password}</p></div>
+          <div className='error-message'>{errors.password}</div>
           <div className='linked'><Link to="/" className="link">Forget Password</Link></div>
                
         </div>
         <div className='input-field  button'>
           <button
-          //  disabled={btndisable}
+         
            >Sign in</button>
           <p>
             Don't have an account?{" "}<Link to='/' className="link">Sign up</Link>
