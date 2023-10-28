@@ -199,7 +199,7 @@ form .input-field1 .link
 /* ------------------------------------------------------------- */
 
 
-form .input-field .error-message 
+form  .error-message 
 {
    color: red;
 }
