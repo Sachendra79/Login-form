@@ -1,83 +1,53 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Login.css'
-import { useNavigate } from 'react-router-dom';
 import main from '../Image/main.png'
 import side from '../Image/side.png'
 import  { useState } from 'react';
 
-function Login() {
+function Login({children}) {
+ const[email,setEmail]=useState('');
+const [isValidEmail,setisvalidEmail]=useState(true);
+const [btndisable,setbtnDisable]=useState(true);
+const [notice,setNotice]=useState("");
+const [password,setPassword]=useState("");
 
-  const navigate =useNavigate();
+function changeHandler(e)
+{
+    const inputemail=e.target.value;
+    setEmail(inputemail);
+};
+function passwordchangeHandler(e)
+{
 
-  function pageHandler()
-  {
-    navigate("/signup");
-  }
- 
+}
 
+  return (
 
-    return (
-
-      
-        <div className='login-container'>
-
-           <div className='main' >
-
-
-       
-          <div className='side-img'>
-                   {/* <img src={side}></img> */}
-                   
-                   </div>
-              
-               <div className='main-img'>
-                   {/* <img src={main} alt='sorry'></img> */}
-               
-                   </div>
-      
-              
-                <div className='form-container'>
-                  <div className='heading'> <h1>Login Here!</h1></div>
-             
-      
-                <form >
-                  <div className='form-elements'>
-
-
-                  <div className='' >
-                <input
-                    type="text"
-                    placeholder="Name"
-                  
-                  
-                />
-                </div>
-
-                <div >
-                <input
-                    type="password"
-                    placeholder="Enter Your Password here"
-                  
-                  
-                />
-                </div>
-                
-                
-               
-              
-              <div className='form-button'>Don't have an account? <button onClick={pageHandler}>Signup</button> </div>
-                  </div>
-                
-            </form>
-
-
-                  
-                  
-                </div>
- </div>
+   <div className='login-container'>
+    <form action='#'>
+        <h2 className='main-heading'> Welcome!</h2>
+        <h3 className='heading'>Please,enter your details</h3>
+        <div className='input-field linked'>
+          <input type='text' value={email} onChange={changeHandler} required placeholder='Enter Your Email'></input>
+          <div className='linked'></div>
+        </div>
+     {!isValidEmail && <p className='error-message'>{notice}</p>}
+        <div className='input-field'>
+          <input type='password' value={password} onChange={passwordchangeHandler} required placeholder='Enter Your Password'></input>
+          <div className='linked'><Link to="/" className="link">Frogot Password</Link>
           </div>
+        </div>
+        <div className='input-field  button'>
+          <button disabled={btndisable}>Sign in</button>
+          <p>
+            Don't have an account?{" "}<Link to='/' className="link">Sign up</Link>
+          </p>
+        </div>
+    </form>
+          
+ </div>
+          
     );
 }
 
