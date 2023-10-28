@@ -7,50 +7,34 @@ import { useState } from 'react';
 
 function Signup() {
 
-    const [formData, setFormData] = useState({ email: '',name: '',number: '',stNumber: '' });
+    const [formData, setFormData] = useState({ email: '',username: '',number: '',stNumber: '' });
     const [errors, setErrors] = useState({ email: '',name: '',number: '',stNumber: '' });
   
 function validateInput (name, value)  {
     const errorsCopy = { ...errors };
-    const usernameRegex = /^[a-zA-Z0-9]{4,}$/;
-    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    const usernameRegex = /^[A-Za-z]{4,}$/;
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     const stNumberRegex = /^2.{7,}$/; 
     const phoneNumberRegex = /^[6-9]\d{9}$/; 
 
-  if(name === 'name')
+  if(name === 'username')
   {
-    errorsCopy.name = usernameRegex.test(value) ? '' : 'Username must contain alphabet';
+    errorsCopy.username = usernameRegex.test(value) ? '' : 'Username must contain alphabet';
   }
-  if(name === 'email')
-  {
+  
     if(name=== 'email')
    {
     errorsCopy.email = emailRegex.test(value) ? '': 'Invalid email format';
    }
-  }
-
-
-    switch (name) {
-       
-        case 'email':
-          errorsCopy.email = emailRegex.test(value)
-            ? ''
-            : 'Invalid email format';
-          break;
-        case 'p':
-          errorsCopy.password = passwordRegex.test(value)
-            ? ''
-            : 'Password must be at least 8 characters.';
-          break;
-        case 'phoneNumber':
-          errorsCopy.phoneNumber = phoneNumberRegex.test(value)
-            ? ''
-            : 'Phone number must start with 6, 7, 8, or 9 and be 10 digits long.';
-          break;
-        default:
-          break;
-      }
-
+    if(name === 'number')
+    {
+        errorsCopy.number = phoneNumberRegex.test(value) ? '' : 'Invalid PhoneNumber';
+    }
+     if(name === 'stNumber')
+     {
+        errorsCopy.stNumber = stNumberRegex.test(value) ? '': 'Password must be at least 7 characters.';
+     }
+     
     setErrors(errorsCopy);
   };
 
