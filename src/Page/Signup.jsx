@@ -14,7 +14,7 @@ function validateInput (name, value)  {
     const errorsCopy = { ...errors };
     const usernameRegex = /^[A-Za-z]{4,}$/;
   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    const stNumberRegex = /^2.{7,}$/; 
+    const stNumberRegex = /^2.{6,}$/; 
     const phoneNumberRegex = /^[6-9]\d{9}$/; 
 
   if(name === 'username')
@@ -47,12 +47,14 @@ function changeHandler(e)
  
 const handleSubmit = (e) => {
     e.preventDefault();
-    if (validateInput())
-     {
+
+    if (Object.values(errors).every((error) => error === '')) {
+      
       console.log(formData);
     } 
     else {
-      alert("Please fix the errors");
+      
+      alert('Please correct the errors in the form before submitting.');
     }
   };
 
