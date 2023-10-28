@@ -212,3 +212,130 @@ form .input-field .linked
   text-align: end;
   margin-top: 15px;
 }
+
+@media  (max-width:257px) {
+:root {
+  width: 300%;
+  object-fit: cover;
+  height: 150vh;
+}
+
+.main-img{
+   background-image: none;
+ }
+ .nain-img 
+ {
+  background-image: none;
+ }
+
+}
+
+@media  (max-width:360px) {
+  :root {
+    width: 300%;
+   height: 100vh;
+   
+  }
+  .main-img{
+     background-image: none;
+   }
+   .main1-img{
+    background-image: none;
+  }
+  .container
+  {
+    top: 55px;
+    left: 14px;
+    height: 600px;
+    width: 335px;
+   }
+   .signup-container
+   {
+     scale: 0.9;
+     
+     left: 7px;
+     width: 310px;
+     height: 500px;
+     
+   }
+   .main-heading1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+   
+  }
+  .heading1
+  {
+    margin-left: 10px;
+  }
+  form .input-field1 input {
+  scale: 0.85;
+  ;
+  }
+  
+  form .input-field1 button 
+  {
+   scale: 0.85;
+    margin: -20px 0px 3px 0px;
+  }
+  /* -----------------------Login container media query */
+  .login-container
+  {
+    scale: 0.9;
+    
+    left: 7px;
+    width: 310px;
+    height: 500px;
+    
+  }
+  .main-heading {
+   font-size: 60px;
+margin-top: -80px;
+   line-height: 50px;
+   
+   margin-left: 10px;
+  
+ }
+ .heading
+ {
+   margin-left: 10px;
+ }
+ form .input-field input {
+ scale: 0.85;
+ }
+ 
+ form .input-field button 
+ {
+  scale: 0.85;
+   margin: 19px 0px 3px 0px;
+ }
+
+
+
+  }
+
+  @media  (max-width:582px) {
+    :root {
+      width: 300%;
+      
+      object-fit: cover;
+    }
+    
+    .main-img{
+       background-image: none;
+     }
+    
+    }
+    @media  (max-width:682px) {
+      :root {
+        width: 300%;
+       
+      }
+      
+      .main-img{
+         background-image: none;
+       }
+      
+      }

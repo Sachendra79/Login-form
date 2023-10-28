@@ -19,7 +19,7 @@ function validateInput (name, value)  {
 
   if(name === 'username')
   {
-    errorsCopy.username = usernameRegex.test(value) ? '' : 'Username must contain alphabet';
+    errorsCopy.username = usernameRegex.test(value) ? '' : 'Username must contain alphabet only';
   }
   
     if(name=== 'email')
