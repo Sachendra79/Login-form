@@ -45,9 +45,21 @@ function changeHandler(e)
   validateInput(name, value);
 };
  
+const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateInput())
+     {
+      console.log(formData);
+    } 
+    else {
+      alert("Please fix the errors");
+    }
+  };
+
+
     return (
         <div className='signup-container'>
-           <form action='#'>
+           <form onSubmit={handleSubmit}>
            <h2 className='main-heading1'> Welcome!</h2>
         <h3 className='heading1'>Please,enter your details</h3>
 
