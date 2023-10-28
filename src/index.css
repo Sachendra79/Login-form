@@ -185,17 +185,20 @@ form .input-field1 button:active
 }
 form .input-field1 p{
  text-align: center;
- font-size: 115%;
+ font-size: 100%;
 }
+form .input-field1 .link
+{
+  text-decoration: none;
+}
+form .inp
 
 /* ------------------------------------------------------------- */
-form .notice 
+
+
+form .input-field .error-message
 {
-  position: relative;
-  top: 20px;
-  text-align: center;
-  font-size: 16px;
-  color: red;
+   color: red;
 }
 form .input-field .link
 {
