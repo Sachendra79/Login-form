@@ -9,21 +9,16 @@ import { Children,reverse } from 'react';
 
 function App() {
     return (
-    //     <div className='form'>
-    //    <Routes>
-    //         <Route exact path="/"  element={<Login/>}/>
-    //         <Route exact path="/Signup"  element={<Signup/>} />
-    //           </Routes>
-    //     </div>
-    <>
+   
+    <Router>
 <Routes>
     
-    <Route exact to="/" element={<Card reverse={reverse}><section><Signup/></section></Card>}>   </Route>
-    <Route exact path="/login" element={<Card children={Children}><section><Login/></section></Card>}>   </Route>
+    <Route exact to="/" element={<Card reverse={reverse}><><Signup/></></Card>}>   </Route>
+    <Route exact path="/login" element={<Card children={Children}><><Login/></></Card>}>   </Route>
     
   
 </Routes>
-    </>
+    </Router>
        
     );
 }
