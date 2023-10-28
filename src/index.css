@@ -230,7 +230,7 @@ form .input-field .linked
  
 }
 
-@media  (max-width:361px) {
+/* @media  (max-width:361px) {
   :root {
     width: 300%;
    height: 100vh;
@@ -281,7 +281,7 @@ form .input-field .linked
     margin: -20px 0px 3px 0px;
   }
   /* -----------------------Login container media query */
-  .login-container
+  /*.login-container
   {
     scale: 0.9;
     
@@ -311,7 +311,7 @@ form .input-field .linked
   scale: 0.85;
    margin: 19px 0px 3px 0px;
  }
-}
+} */
 
 @media (max-width:415px) {
   
