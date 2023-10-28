@@ -1,5 +1,4 @@
-*
-{
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -56,6 +55,21 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
+   border-radius: 40px;
+  cursor: pointer;
+}
+.signup-container
+{
+  position: relative;
+  top: -50px;
+  left: 640px;
+  width: 470px;
+  height: 500px;
+  border: solid 1px #000;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
  
   align-items: center;
    border-radius: 40px;
@@ -78,6 +92,24 @@ font-weight: 400;
 line-height: 45px;
 user-select: none;
 }
+.main-heading1 {
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 74px;
+  margin-top: -5px;
+  font-family: Times New Roman;
+  color: #080C66;
+user-select: none;
+}
+.heading1
+{
+  font-family: Alike Angular;
+font-size: 35px;
+font-weight: 400;
+line-height: 40px;
+user-select: none;
+}
+
 form .input-field {
   position: relative;
   width: 100%;
@@ -105,7 +137,7 @@ form .input-field button
   color:#fff;
   font-style: none;
   font-family: Alike Angular;
-  margin: 25px 0px 20px 0px;
+  margin: 35px 0px 20px 0px;
 }
 form .input-field button:active
 {
@@ -114,7 +146,50 @@ form .input-field button:active
 form .input-field p{
  text-align: center;
  font-size: 115%;
-}form .notice 
+}
+/* ---------------------------------------- */
+
+
+form .input-field1 {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+}
+
+form .input-field1 input {
+  position: relative;
+  width: 100%;
+  height: 90%;
+  border-radius: 12px;
+  border: solid 2px #000;
+  font-size: 16px;
+  outline: none;
+}
+form .input-field1 button 
+{
+  width: 100%;
+  height: 95%;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 400;
+  background: #3874EA ;
+  color:#fff;
+  font-style: none;
+  font-family: Alike Angular;
+  margin: -10px 0px 5px 0px;
+}
+form .input-field1 button:active
+{
+  background-color: #080C66;
+}
+form .input-field1 p{
+ text-align: center;
+ font-size: 115%;
+}
+
+/* ------------------------------------------------------------- */
+form .notice 
 {
   position: relative;
   top: 20px;

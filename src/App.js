@@ -13,7 +13,7 @@ function App() {
     <Router>
 <Routes>
     
-    <Route exact to="/" element={<Card reverse={reverse}><><Signup/></></Card>}>   </Route>
+    <Route exact path="/" element={<Card reverse={reverse}><Signup/></Card>}>   </Route>
     <Route exact path="/login" element={<Card children={Children}><><Login/></></Card>}>   </Route>
     
   

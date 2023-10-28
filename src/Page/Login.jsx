@@ -29,13 +29,13 @@ function passwordchangeHandler(e)
         <h2 className='main-heading'> Welcome!</h2>
         <h3 className='heading'>Please,enter your details</h3>
         <div className='input-field linked'>
-          <input type='text' value={email} onChange={changeHandler} required placeholder='Enter Your Email'></input>
-          <div className='linked'></div>
+          <input type='email' value={email} onChange={changeHandler} pattern='./@gmail.com' required placeholder='Enter Your Email'></input>
+          <div className='error-message'></div>
         </div>
      {!isValidEmail && <p className='error-message'>{notice}</p>}
         <div className='input-field'>
-          <input type='password' value={password} onChange={passwordchangeHandler} required placeholder='Enter Your Password'></input>
-          <div className='linked'><Link to="/" className="link">Frogot Password</Link>
+          <input type='password'  onChange={passwordchangeHandler} required placeholder='Enter Your Password'></input>
+          <div className='linked'><Link to="/" className="link">Forget Password</Link>
           </div>
         </div>
         <div className='input-field  button'>
