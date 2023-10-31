@@ -13,7 +13,7 @@ function Login({children}) {
   function validateInput (name, value)  {
     const errorsCopy = { ...errors };
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    const passwordRegex = /^2.{7,}$/; 
+    const passwordRegex = /^2.{6,}$/; 
 
    if(name=== 'email')
    {
